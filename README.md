@@ -122,3 +122,48 @@ $ flutter run
 # Or in VSCode > Run > Run Without Debugging
 
 ```
+
+### S02-L21: Dart Basics
+
+[DartPad](https://dartpad.dev/?)
+
+```dart
+double addNumbers(double num1, double num2) { 
+  // print(num1 + num2);
+  return num1 + num2;
+}
+
+void main() {
+  print(addNumbers(1, 2.6));
+  print(addNumbers(1, 1));
+  print('Hello!');
+}
+```
+
+### S02-L22: More Dart Basics
+
+```dart
+class Person {
+  String name = 'Max';
+  int age = 30;
+}
+
+double addNumbers(double num1, double num2) { 
+  // print(num1 + num2);
+  return num1 + num2;
+}
+
+void main() {
+  var p1 = Person();
+  var p2 = Person();
+  p2.name = 'Manu';
+  print(p1.age);
+  print(p2.name);
+  double firstResult;
+  firstResult = addNumbers(1, 1);
+  // ...
+  print(firstResult + 1);
+  print('Hello!');
+}
+
+```
