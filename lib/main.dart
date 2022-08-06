@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use, sort_child_properties_last
+// ignore_for_file: deprecated_member_use, sort_child_properties_last, prefer_const_constructors, avoid_print
 
 import 'package:flutter/material.dart';
 
@@ -9,6 +9,10 @@ void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key key}) : super(key: key);
+
+  void answerQuestion() {
+    print('Answer chosen!');
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -22,19 +26,19 @@ class MyApp extends StatelessWidget {
           title: const Text('My First App'),
         ),
         body: Column(
-          children: const [
+          children: [
             Text('The question!'),
             RaisedButton(
               child: Text('Answer 1'),
-              onPressed: null,
+              onPressed: answerQuestion,
             ),
             RaisedButton(
               child: Text('Answer 2'),
-              onPressed: null,
+              onPressed: answerQuestion,
             ),
             RaisedButton(
               child: Text('Answer 3'),
-              onPressed: null,
+              onPressed: answerQuestion,
             ),
           ],
         ),
